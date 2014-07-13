@@ -1,8 +1,10 @@
--- | Main entry point to the application.
 module Main where
 
--- | The main entry point.
+import Data.Char (digitToInt)
+
 main :: IO ()
-main = do
-    putStrLn "Welcome to FP Haskell Center!"
-    putStrLn "Have a good day!"
+main =
+    print $ sum $ map digitToInt $ show $ factorial 100
+  where
+    factorial :: Integer -> Integer
+    factorial n = product [1..n]
