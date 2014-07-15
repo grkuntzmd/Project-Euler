@@ -1,10 +1,6 @@
 module Main where
 
 import Data.List (nub, sort)
-import Debug.Trace
-debug :: Show a => String -> a -> a
-debug description value =
-    trace (description ++ ": " ++ show value) value
 
 main :: IO ()
 main =
