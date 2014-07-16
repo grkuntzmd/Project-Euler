@@ -1,6 +1,5 @@
 module Main where
 
--- | The main entry point.
 main :: IO ()
 main = print $ fst $ head $ dropWhile (\(n, f) ->
         length (show f) < 1000) $ zip [1..] fibs
