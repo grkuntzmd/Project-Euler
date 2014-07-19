@@ -9,8 +9,7 @@ main =
     print $
     fst $
     maximumBy (compare `on` snd) $
-    map (\d ->
-        (d, repetitionSize d)) [2..1000]
+    map (\d -> (d, repetitionSize d)) [2..1000]
 
 repetitionSize :: Int -> Int
 repetitionSize den =
